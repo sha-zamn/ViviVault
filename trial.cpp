@@ -57,7 +57,7 @@ void TrialManager::showMenu() {
         switch (choice) {
             case 1: luck->run(); break; //Start trial of luck
             case 2: logic->run(); break; //Start trial of logic
-            case 3: navigation->run(); break; //Start trial of navigation
+            case 3: navigation->run(); break; //Start trial of navigationgit add .
         }
     }
 }
