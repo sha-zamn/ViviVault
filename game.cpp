@@ -10,12 +10,12 @@ using namespace std;
 void Game::introduction() {
     cout << "<You wake up and find yourself in a mysterious room. There's a door, but it seems to be locked.>\n";
     cout << "???: How strange, I don't get visitors here. Hey there!\n";
-    cout << "Vivi: I'm Vivi the Cat. What's your name?\n";
+    cout << "Vivi: I'm Vivi the Cat.\n";
     getline(cin, playerName);
 }
 //After passing all trials
 void Game::trialPassed() {
-    cout << "Vivi: And that's all three, " << playerName << "!\n";
+    cout << "Vivi: And that's all three!\n";
     cout << "<The door opened. But wait...>\n";
 }
 //Main game loop
@@ -36,7 +36,7 @@ void Game::run() {
     // First Dialogue Choices
     int dialogueChoice;
 
-    cout << "Vivi: Nice to meet you, " << playerName << ". You look lost. How did you come here?\n";
+    cout << "Vivi: You look lost. How did you come here?\n";
     cout << "\n<Press 1 or 2>\n";
     cout << "1. I don't know. Did you kidnap me?\n";
     cout << "2. A bipedal cat is talking to me...\n";
