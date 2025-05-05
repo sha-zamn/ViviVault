@@ -1,6 +1,6 @@
 //Include necessary headers for game modules and implementation files
 #include "game.h" //Game class
-#include "trial.h" //Trial base class
+#include "trial.h" //Trial Base Class
 #include "menu.h"
 #include "luck_trial.h"
 #include "logic_trial.h"
