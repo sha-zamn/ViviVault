@@ -8,10 +8,16 @@ using namespace std;
 
 //Introduction
 void Game::introduction() {
+    bool validName = false; 
+
     cout << "<You wake up and find yourself in a mysterious room. There's a door, but it seems to be locked.>\n";
     cout << "???: How strange, I don't get visitors here. Hey there!\n";
-    cout << "Vivi: I'm Vivi the Cat.\n";
-    getline(cin, playerName);
+    cout << "Vivi: I'm Vivi the Cat. But you can just call me Vivi. What's your name?\n";
+    cin >> ws;
+    while (!validName) {  // Loop until input is valid
+        getline(cin, playerName);  // Read player name
+        validName = true;  // If input is valid, set flag to true and exit the loop
+    }
 }
 //After passing all trials
 void Game::trialPassed() {
@@ -21,7 +27,7 @@ void Game::trialPassed() {
 //Main game loop
 void Game::run() {
     int choice;
-    cout << "<Debug Mode: Enable detailed combat info?>\n"; //For testing
+    cout << "<Debug Mode On?>\n"; //For testing
     cout << "1. Yes\n2. No\n";
 
     while (true) { //validate input as integer
@@ -36,7 +42,7 @@ void Game::run() {
     // First Dialogue Choices
     int dialogueChoice;
 
-    cout << "Vivi: You look lost. How did you come here?\n";
+    cout << "Vivi: Nice to meet you, " << playerName << ". You look lost. How did you come here?\n";
     cout << "\n<Press 1 or 2>\n";
     cout << "1. I don't know. Did you kidnap me?\n";
     cout << "2. A bipedal cat is talking to me...\n";

@@ -36,7 +36,7 @@ PlayerAction BattleSystem::getPlayerChoice() {
         if (validateInput(choice) && choice >= 1 && choice <= 3) break;
         cout << "<Pick 1, 2, or 3>\n";
     }
-    cout << endl;
+    cout << endl << endl << endl;
     return static_cast<PlayerAction>(choice - 1); //convert int to enum
 }
 
@@ -162,7 +162,7 @@ void BattleSystem::start(bool debugMode) {
     cout << "<Your Options:>\n";
     cout << "1. Approach — Try to sneak towards Vivi\n";
     cout << "2. Stand By — Stay still, let her act first\n";
-    cout << "3. Reason — Try to talk her down\n\n";
+    cout << "3. Reason — Try to talk her down\n";
 
 //Main combat loop
     while (vivi.isAlive() && playerHP > 0) {
