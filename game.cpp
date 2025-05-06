@@ -35,7 +35,7 @@ void Game::run() {
         cout << "<Enter 1 or 2>\n";
     }
 
-    debugMode = (choice == 1); //Debug on
+    debugMode = (choice == 1); //Debug on for testing
 
     introduction(); //Calls introduction
 

@@ -7,7 +7,7 @@
 
 using namespace std;
 
-bool validateInput(int&); //validate input as integer
+bool validateInput(int&); //Validate input as integer
 
 //Define Game class
 class Game {

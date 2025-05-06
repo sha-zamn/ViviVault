@@ -37,7 +37,7 @@ private:
 
 public:
     BattleSystem(); //Constructor
-    void start(bool debugMode); //Starts combat with debug on
+    void start(bool debugMode); //Starts combat with debug mode on
 };
 
 void showDebugTurnInfo(ViviCharacter& vivi, PlayerAction choice, bool debugMode); //For testing

@@ -159,7 +159,7 @@ void BattleSystem::start(bool debugMode) {
     }
 
 //Player choices
-    cout << "<Your Options:>\n";
+    cout << "<Your Options>\n";
     cout << "1. Approach — Try to sneak towards Vivi\n";
     cout << "2. Stand By — Stay still, let her act first\n";
     cout << "3. Reason — Try to talk her down\n";
@@ -167,7 +167,7 @@ void BattleSystem::start(bool debugMode) {
 //Main combat loop
     while (vivi.isAlive() && playerHP > 0) {
         cout << "--- NEW TURN ---\n";
-        cout << "Your HP: " << playerHP << " | \"Vivi\" HP: " << vivi.getHP() << "\n";
+        cout << "Your HP: " << playerHP << " || \"Vivi\" HP: " << vivi.getHP() << "\n";
         string state = vivi.getState();
 //Show Vivi's state
         if (state == "Agitated") {
